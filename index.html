@@ -9,10 +9,16 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>Dev server</title>
+    <title>Hanjae Lee</title>
     <link
       href="https://api.fontshare.com/v2/css?f[]=general-sans@500,600,400,700&display=swap"
       rel="stylesheet" />
+    <meta
+      name="description"
+      content="Hanjae Lee's Portfoilo website" />
+    <meta
+      name="keywords"
+      content="html, css, js" />
   </head>
   <body>
     <header class="header container">
@@ -42,6 +48,7 @@
           <li class="header__line"></li>
           <li>
             <button
+              aria-label="theme-toggle btn"
               id="theme-toggle"
               class="header__sun">
               <svg
@@ -65,7 +72,9 @@
             >
           </li>
         </ul>
-        <button class="header__bars">
+        <button
+          aria-label="mobile nav button"
+          class="header__bars">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -108,6 +117,7 @@
           <li class="mobile-nav__link-line"></li>
           <li>
             <button
+              aria-label="theme-toggle btn"
               id="theme-toggle"
               class="mobile-nav__sun">
               <svg
