@@ -2,3 +2,4 @@ tags
 build/
 .cache/
 **/*.swp
+src/ctags
