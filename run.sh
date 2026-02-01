@@ -1,3 +1,7 @@
 cmake -B build
 cd build
-make && ./src/app
+make
+cd ..
+sh ./ctags.sh
+cd build
+./src/app
