@@ -5,7 +5,7 @@ This is Portfolio web application implemented by ecewo.
 ## build and run
 
 ```shell
-./build.sh && ./build/app
+./run.sh
 ```
 
 ## build docker image

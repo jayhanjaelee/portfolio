@@ -11,8 +11,6 @@ FetchContent_Declare(
 
 FetchContent_MakeAvailable(ecewo)
 
-add_executable(${PROJECT_NAME}
-  main.c
-)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE ecewo)
+add_subdirectory(src)
