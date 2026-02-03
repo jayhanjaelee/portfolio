@@ -12,7 +12,7 @@
 #include "ecewo.h"
 
 void index_controller(Req *req, Res *res);
-void hello_world(Req *req, Res *res);
+void ping(Req *req, Res *res);
 
 #endif /* CONTROLLER_H */
 

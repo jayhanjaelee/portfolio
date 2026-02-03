@@ -9,7 +9,28 @@ FetchContent_Declare(
   GIT_TAG v3.1.1
 )
 
-FetchContent_MakeAvailable(ecewo)
+FetchContent_Declare(
+  ecewo-fs
+  GIT_REPOSITORY https://github.com/ecewo/ecewo-fs
+  GIT_TAG main
+)
+
+FetchContent_Declare(
+  ecewo-static
+  GIT_REPOSITORY https://github.com/ecewo/ecewo-static
+  GIT_TAG main
+)
+
+FetchContent_MakeAvailable(
+  ecewo
+  ecewo-fs
+  ecewo-static
+)
+
+ecewo_plugins(
+  fs
+  static
+)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 

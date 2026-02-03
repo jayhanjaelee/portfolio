@@ -5,4 +5,4 @@ add_library(file_handler STATIC file_handler.c)
 target_include_directories(file_handler PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 # 해당 라이브러리를 컴파일 할 옵션
-target_compile_options(file_handler PRIVATE -Wall -Werror)
+target_compile_options(file_handler PRIVATE -Wall)

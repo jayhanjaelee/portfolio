@@ -1,0 +1,65 @@
+@import url("reset.css");
+
+:root {
+    font-size: 10px;
+}
+
+h1 { font-size: 3.2rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1rem; }
+
+/* Mobile */
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.border {
+    border: 1px solid #000;
+}
+
+header {
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    min-height: 80vh;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    display: flex;
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* small phone */
+@media (min-width: 480px) {
+}
+
+/* small devices */
+@media (min-width: 480px) {
+}
+
+/* most tablets */
+@media (min-width: 768px) {
+}
+
+/* smaller desktop */
+@media (min-width: 992px) {
+}
+
+/* large devices */
+@media (min-width: 1200px) {
+}
+
+
