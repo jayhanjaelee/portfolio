@@ -4,7 +4,7 @@
  * @date 2026-01-28 23:52
  */
 
-#define PORT 8100
+#define PORT 8888
 
 #include <stdio.h>
 

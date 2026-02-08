@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hanjae Lee's Website</title>
-    <!-- Link to CSS files if needed -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hanjae Lee's Blog</title>
     <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
     <link rel="stylesheet" href="/public/style.css">
 </head>
+
 <body>
-    <header class="border">
-        <h1>Header</h1>
+    <header class="header-container">
+        <div class="header-title">
+            <a class="logo" href="/">Hanjae Lee</a>
+            <button class="menu-btn">Menu Btn</button>
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li><a href="/">About Me</a></li>
+                <li><a href="/">Posts</a></li>
+                <!-- TODO: uncomment if page created. -->
+                <!-- <li><a href="/about">About Me</a></li> -->
+                <!-- <li><a href="/posts">Posts</a></li> -->
+            </ul>
+        </div>
     </header>
-    <main class="border">
-        <h1>Hello, World</h1>
+    <main>
+        <p>
+            안녕하세요. 이한재라고 합니다.<br>
+            해당 블로그는 저의 인생과 개발자로서의 여정을 담기 위한 블로그입니다.
+        </p>
+        <div class="posts-container">
+            <div>Posts Section 1</div>
+            <div>Posts Section 2</div>
+            <div>Posts Section 3</div>
+        </div>
     </main>
     <footer class="border">
-        <h1>Footer</h1>
+        <span>Copyright © 2026. Hanjae Lee</span>
     </footer>
     <script src="/public/index.js"></script>
 </body>
+
 </html>

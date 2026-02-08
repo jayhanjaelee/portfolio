@@ -1,19 +1,61 @@
 @import url("reset.css");
 
-:root {
+@font-face {
+    /* 폰트 등록 */
+    font-family: "Noto Sans KR";
+    src: url("/public/fonts/NotoSansKR.ttf") format("truetype");
+}
+
+:root {}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo", "Malgun Gothic", "맑은 고딕", 나눔고딕, "Nanum Gothic", "Noto Sans CJK KR", arial, 돋움, Dotum, Tahoma, Geneva, sans-serif;
+    /* 폰트 지정 */
+}
+
+html {
     font-size: 10px;
 }
 
-h1 { font-size: 3.2rem; }
-h2 { font-size: 2.4rem; }
-h3 { font-size: 1.8rem; }
-h4 { font-size: 1.6rem; }
-h5 { font-size: 1rem; }
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.4rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+h4 {
+    font-size: 1.6rem;
+}
+
+h5 {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+a:hover {
+    color: #000;
+}
 
 /* Mobile */
 body {
     width: 100%;
     min-height: 100vh;
+    min-width: 100vw;
+    font-size: 1.6rem;
+    overflow-x: hidden;
 }
 
 .border {
@@ -21,17 +63,88 @@ body {
 }
 
 header {
+    font-size: 2.6;
     display: flex;
+    flex-direction: column;
     min-height: 10vh;
     justify-content: center;
     align-items: center;
 }
 
+header div {
+    width: 100%;
+    display: flex;
+    /* background-color: red; */
+    padding: 1rem;
+}
+
+header .header-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+header .header-nav {
+    justify-content: center;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    list-style: none;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.header-title .logo {
+    margin-left: 1rem;
+}
+
+.header-title .menu-btn {
+    margin-right: 1rem;
+}
+
+nav {
+    font-size: 2.4rem;
+    width: 100%;
+    background-color: blue;
+
+}
+
+.header-nav ul {
+    display: block;
+    width: 100%;
+}
+
+.header-nav ul li {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid #000;
+    padding: 1rem;
+}
+
 main {
     display: flex;
     min-height: 80vh;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 1rem;
+}
+
+main p {
+    margin-bottom: 1rem;
+}
+
+main div {
+    margin-bottom: 1rem;
+    width: 100%;
+    min-height: 20rem;
+    background-color: lightgray;
+    padding: 1rem;
 }
 
 footer {
@@ -39,27 +152,21 @@ footer {
     min-height: 10vh;
     justify-content: center;
     align-items: center;
+    font-size: 1.4rem;
 }
 
 
 /* small phone */
-@media (min-width: 480px) {
-}
+@media (min-width: 480px) {}
 
 /* small devices */
-@media (min-width: 480px) {
-}
+@media (min-width: 480px) {}
 
 /* most tablets */
-@media (min-width: 768px) {
-}
+@media (min-width: 768px) {}
 
 /* smaller desktop */
-@media (min-width: 992px) {
-}
+@media (min-width: 992px) {}
 
 /* large devices */
-@media (min-width: 1200px) {
-}
-
-
+@media (min-width: 1200px) {}

@@ -1,7 +1,3 @@
-cmake -B build
-cd build
-make
-cd ..
-sh ./ctags.sh
-cd build
-./src/app
+cmake . -B build
+make -C build/
+./build/src/app

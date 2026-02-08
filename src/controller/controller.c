@@ -4,7 +4,7 @@
  * @date 2026-02-01 14:06
  */
 
-#define PUBLIC_DIR "../public"
+/* PUBLIC_DIR is defined by CMake during compilation */
 
 #include <stdio.h>
 
@@ -16,6 +16,12 @@ void index_controller(Req *req, Res *res) {
     char filename[1024];
     snprintf(filename, sizeof(filename), "%s/%s", PUBLIC_DIR, "index.html");
     const char *html_content = read_file(filename);
+
+    if (!html_content) {
+        send_html(res, INTERNAL_SERVER_ERROR, "Failed to read index.html");
+        return;
+    }
+
     send_html(res, OK, html_content);
 }
 

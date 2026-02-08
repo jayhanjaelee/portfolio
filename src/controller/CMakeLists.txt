@@ -7,3 +7,8 @@ target_include_directories(controller PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 # 해당 라이브러리를 컴파일 할 옵션
 target_compile_options(controller PRIVATE -Wall)
 target_link_libraries(controller PRIVATE ecewo file_handler)
+
+# PUBLIC_DIR을 절대경로로 정의
+target_compile_definitions(controller PRIVATE
+    PUBLIC_DIR="${CMAKE_SOURCE_DIR}/public"
+)
